@@ -8,9 +8,13 @@ class MyClass {
         MyClass.count++;
     }
 
-    static staticMethod1 = () => {};
+    static staticMethod1 = () => {
+        console.log("static method 1");
+    };
 
-    static staticMethod2 = () => {};
+    static staticMethod2 = () => {
+        console.log("static method 2");
+    };
 
     getPrivateFields = () => {
         return `field1: ${this.#privateField1}; field2: ${this.#privateField2}`;
